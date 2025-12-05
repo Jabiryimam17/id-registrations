@@ -1,0 +1,5 @@
+/.env
+/merkletreeids/node_modules/
+/merkletreeids/.env
+/throwouts.py
+/merkletreeids/helper/circomlibjs/

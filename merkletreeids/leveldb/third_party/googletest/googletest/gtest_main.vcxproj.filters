@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\third_party\googletest\googletest\src\gtest_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\third_party\googletest\googletest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C5EB82B5-A954-3F14-87CB-7CAD5BD009E4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

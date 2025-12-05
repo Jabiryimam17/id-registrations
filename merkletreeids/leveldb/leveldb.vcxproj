@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F5CD144-7402-3F5D-8DCF-79F88D5CD4DF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>leveldb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">leveldb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">leveldb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">leveldb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">leveldb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">leveldb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">leveldb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">leveldb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">leveldb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LEVELDB_COMPILE_LIBRARY;LEVELDB_PLATFORM_WINDOWS=1;_UNICODE;UNICODE;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb -BC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb --check-stamp-file C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeSystem.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\cmake\leveldbConfig.cmake.in;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb -BC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb --check-stamp-file C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeSystem.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\cmake\leveldbConfig.cmake.in;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb -BC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb --check-stamp-file C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeSystem.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\cmake\leveldbConfig.cmake.in;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb -BC:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb --check-stamp-file C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\4.0.3\CMakeSystem.cmake;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\cmake\leveldbConfig.cmake.in;C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\port_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\port\port_config.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\builder.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\builder.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\c.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\db_impl.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\db_impl.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\db_iter.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\db_iter.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\dbformat.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\dbformat.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\dumpfile.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\filename.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\filename.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\log_format.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\log_reader.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\log_reader.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\log_writer.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\log_writer.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\memtable.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\memtable.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\repair.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\skiplist.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\snapshot.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\table_cache.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\table_cache.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\version_edit.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\version_edit.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\version_set.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\version_set.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\write_batch_internal.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\write_batch.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\port_stdcxx.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\port.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\port\thread_annotations.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\block_builder.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\block_builder.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\block.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\block.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\filter_block.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\filter_block.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\format.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\format.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\iterator_wrapper.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\iterator.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\merger.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\merger.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\table_builder.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\table.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\two_level_iterator.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\two_level_iterator.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\arena.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\arena.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\bloom.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\cache.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\coding.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\coding.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\comparator.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\crc32c.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\crc32c.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\env.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\filter_policy.cc" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\hash.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\hash.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\logging.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\logging.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\mutexlock.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\no_destructor.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\options.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\random.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\status.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\c.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\cache.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\comparator.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\db.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\dumpfile.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\env.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\export.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\filter_policy.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\iterator.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\options.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\slice.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\status.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\table_builder.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\table.h" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\leveldb\write_batch.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\env_windows.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\windows_logger.h" />
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\helpers\memenv\memenv.cc" />
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\helpers\memenv\memenv.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\ZERO_CHECK.vcxproj">
+      <Project>{5CE84217-8FB0-3967-9C28-ABE24F65065B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

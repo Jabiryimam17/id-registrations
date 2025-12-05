@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\status_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\no_destructor_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\testutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\autocompact_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\corruption_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\db_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\dbformat_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\filename_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\log_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\recovery_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\skiplist_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\version_edit_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\version_set_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\db\write_batch_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\helpers\memenv\memenv_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\filter_block_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\table\table_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\arena_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\bloom_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\cache_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\coding_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\crc32c_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\hash_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\logging_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\include\port\port_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\util\testutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Jabir\WebstormProjects\Voting\merkletreeids\leveldb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{14376F30-E567-3CF9-B09C-906352323484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C5EB82B5-A954-3F14-87CB-7CAD5BD009E4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

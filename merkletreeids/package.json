@@ -1,0 +1,19 @@
+{
+  "name": "merkletreeids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "GenSign.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "dotenv": "^17.2.0",
+    "ffjavascript": "^0.3.1"
+  }
+}

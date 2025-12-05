@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/cmake_install.cmake",
+		"C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/third_party/googletest/cmake_install.cmake",
+		"C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/third_party/googletest/googlemock/cmake_install.cmake",
+		"C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/third_party/googletest/googletest/cmake_install.cmake",
+		"C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/third_party/benchmark/cmake_install.cmake",
+		"C:/Users/Jabir/WebstormProjects/Voting/merkletreeids/leveldb/third_party/benchmark/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
