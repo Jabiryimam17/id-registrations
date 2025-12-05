@@ -13,21 +13,21 @@ The system consists of:
 ### Tech stack
 
 - Backend
-  - Python 3.11+ (recommended)
-  - Flask (+ CORS)
-  - MySQL (via `flask_mysqldb`)
-  - LevelDB (via `plyvel`)
-  - Poseidon hash (`circomlibpy`)
-  - Email via SMTP (Gmail example)
+    - Python 3.11+ (recommended)
+    - Flask (+ CORS)
+    - MySQL (via `flask_mysqldb`)
+    - LevelDB (via `plyvel`)
+    - Poseidon hash (`circomlibpy`)
+    - Email via SMTP (Gmail example)
 
 - Frontend
-  - Next.js 15
-  - React 19
-  - TailwindCSS (+ shadcn/ui, lucide-react, framer-motion)
+    - Next.js 15
+    - React 19
+    - TailwindCSS (+ shadcn/ui, lucide-react, framer-motion)
 
 - Helper (Merkle/signature)
-  - Node.js (ESM)
-  - `circomlib`, `circomlibjs`, `ffjavascript`, `dotenv`
+    - Node.js (ESM)
+    - `circomlib`, `circomlibjs`, `ffjavascript`, `dotenv`
 
 
 ---
@@ -118,19 +118,7 @@ Node packages:
 
 Backend loads environment via `os.getenv(...)`. Example `.env` values in repo root:
 
-```
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=alexandria
-DB_PASSWORD=623616
-DB_NAME='National_ID'
-APP_PASSWORD='rcbh pkwv wmdd fzsk'  # Gmail App Password
-EMAIL_SENDER=jabiryimam1@gmail.com
-DEFAULT_VERIFICATION_ID=d49bdf13-ca9e-4019-9c26-8660fc09f870
-EXAMPLE_2_ADDRESS=0xfD626Fc7e1991078A99e88929928C0cADCd727b5
-ELECTION_V1=0xB603Bd0109222A735c4E57d04342D3D5c8BAF5dF
-MERKLE_PATH="C:\\Users\\Jabir\\PycharmProjects\\NationalIDSystem\\ids_tree"
-```
+
 
 Notes:
 - `MERKLE_PATH` points to the LevelDB directory for the Merkle tree. On non‑Windows systems, set it to a valid path like `/path/to/ids_tree`.
@@ -182,9 +170,9 @@ cd ..
 6) MySQL database
 - Create a database matching `DB_NAME` and required tables: `users`, `secrets`, `parties`.
 - Columns inferred from the code (you may adapt types to your needs):
-  - `users(name, phone_number, email, birth_place, age, sex, ID, email_verification_code, email_code_expire, verified)`
-  - `secrets(id, secret, iv, salt)`
-  - `parties(ID, party_name, leader_email, leader_ID, short_name)`
+    - `users(name, phone_number, email, birth_place, age, sex, ID, email_verification_code, email_code_expire, verified)`
+    - `secrets(id, secret, iv, salt)`
+    - `parties(ID, party_name, leader_email, leader_ID, short_name)`
 
 TODO: Provide exact schema DDLs once finalized.
 
@@ -233,17 +221,8 @@ Merkle helper (`merkletreeids/package.json`):
 
 ---
 
-### Tests
-
-Currently, no automated tests are defined for backend or frontend.
-
-TODOs:
-- Add unit tests for Merkle tree path generation and hashing.
-- Add API integration tests (registration, verification, party flows).
-- Add frontend component/integration tests.
 
 
----
 
 ### Security considerations
 
@@ -258,26 +237,21 @@ TODOs:
 ### Troubleshooting
 
 - `plyvel` import or runtime errors:
-  - Ensure LevelDB is installed on your system and accessible to Python.
-  - Verify `MERKLE_PATH` points to a writable directory.
+    - Ensure LevelDB is installed on your system and accessible to Python.
+    - Verify `MERKLE_PATH` points to a writable directory.
 
 - `Node` not found when registering voters:
-  - Install Node.js and ensure `node` is in your `PATH`.
-  - Run `npm install` in `merkletreeids/`.
+    - Install Node.js and ensure `node` is in your `PATH`.
+    - Run `npm install` in `merkletreeids/`.
 
 - MySQL connection errors:
-  - Check `.env` DB settings; ensure the DB and tables exist.
-  - Verify user credentials and host/port.
+    - Check `.env` DB settings; ensure the DB and tables exist.
+    - Verify user credentials and host/port.
 
 
 ---
 
-### License
 
-TODO: Add a license (e.g., MIT, Apache-2.0) at the root and state it here.
-
-
----
 
 ### Roadmap / TODOs
 
