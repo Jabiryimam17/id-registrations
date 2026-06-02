@@ -28,6 +28,7 @@ class MerkleTreeDB:
 
         index = self._increment_leaves()
         self.db.put(f'leaf_index:{index}'.encode(), leaf_hash)
+        self.db.put(b'leaf_hash:' + leaf_hash, index.to_bytes(4, 'big'))
         self._rebuild_tree()
         return index
 
@@ -52,20 +53,24 @@ class MerkleTreeDB:
         if current_level: self.db.put(b'root', current_level[0].to_bytes(32, 'big'))
 
 
-    def get_merkle_path(self, leaf_hash:bytes):
+    def get_merkle_path(self, leaf_hash: bytes):
 
-        leaf_count = int.from_bytes(self.db.get(b'total_leaves'), 'big')
-        for i in range(leaf_count):
-            if self.db.get(f'leaf_index:{i}'.encode()) == leaf_hash:
-                path, path_indices, actives = self._calculate_path(i)
-                return {
-                    "leaf": str(self.convert_to_num(self.db.get(f'leaf_index:{i}'.encode()))),
-                    "path": path,
-                    "path_indices": path_indices,
-                    "actives": actives,
-                    "merkle_root": str(self.convert_to_num(self.db.get(b'root')))
-                }
-        raise ValueError('Leaf not found')
+        index_bytes = self.db.get(b'leaf_hash:' + leaf_hash)
+
+        if not index_bytes:
+            raise ValueError('Leaf not found')
+
+        leaf_index = int.from_bytes(index_bytes, 'big')
+
+        path, path_indices, actives = self._calculate_path(leaf_index)
+
+        return {
+            "leaf": str(self.convert_to_num(self.db.get(f'leaf_index:{leaf_index}'.encode()))),
+            "path": path,
+            "path_indices": path_indices,
+            "actives": actives,
+            "merkle_root": str(self.convert_to_num(self.db.get(b'root')))
+        }
 
     def _calculate_path(self, leaf_index):
         path = []

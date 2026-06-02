@@ -1,7 +1,6 @@
 import build_eddsa from "./helper/circomlibjs/src/eddsa.js";
 import build_babyjub from "./helper/circomlibjs/src/babyjub.js";
 import build_poseidon from "./helper/circomlibjs/src/poseidon_opt.js";
-import build_pedersen from "./helper/circomlibjs/src/pedersen_hash.js";
 import {
   li_buff_2_bits,
   li_int_2_bits,
@@ -17,12 +16,11 @@ const priv_key = Buffer.from(priv_key_hex, "hex");
 async function main() {
   const [hid_str, sid_str] = process.argv.slice(2);
   const hid = BigInt(hid_str);
-  const sid = BigInt(hid_str);
+  const sid = BigInt(sid_str);
 
   const baby_jub = await build_babyjub();
   const eddsa = await build_eddsa();
   const poseidon = await build_poseidon();
-  const pedersen = await build_pedersen();
 
   const pub_key = eddsa.prv2pub(priv_key);
   const msg_hash = poseidon([hid, sid]);

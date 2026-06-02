@@ -48,6 +48,7 @@ class VoterRegister():
 
         if result.returncode != 0: raise RuntimeError(f"JS Error: {result.stderr}")
 
+
     def generate_path(self, official_id):
         modified_official_id = official_id % (2**256)  # Ensure official_id fits in 256 bits
         hid = self.poseidon_instance.hash(2, [modified_official_id, PUBLIC_SALT])
