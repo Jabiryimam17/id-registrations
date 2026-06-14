@@ -1,4 +1,3 @@
-import { national_id_host } from "../../config";
 'use client';
 
 import {useRouter} from 'next/navigation';
@@ -8,6 +7,8 @@ import {Button} from '@/components/ui/button';
 import {Card, CardContent} from "@/components/ui/card";
 import {Label} from "@/components/ui/label";
 import {motion} from "framer-motion";
+
+const national_id_host = process.env.NEXT_PUBLIC_NATIONAL_ID_HOST || "http://localhost:5000";
 
 export default function RegisterPage() {
     const [form_data, set_form_data] = useState({

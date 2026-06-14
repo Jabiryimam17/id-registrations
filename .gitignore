@@ -1,6 +1,7 @@
 /.env
-/merkletreeids/node_modules/
-/merkletreeids/.env
+/backend/merkletreeids/.env
 /throwouts.py
 /merkletreeids/helper/circomlibjs/
 /frontend/node_modules/
+/backend/merkletreeids/leveldb/
+/backend/merkletreeids/node_modules/
