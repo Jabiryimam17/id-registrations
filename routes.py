@@ -16,7 +16,11 @@ load_dotenv()
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
-MERKLE_PATH = os.getenv("MERKLE_PATH")
+MERKLE_PATH = os.getenv("MERKLE_PATH", "ids_tree")
+if not os.path.isabs(MERKLE_PATH):
+    # Resolve relative to the project root (where routes.py is located)
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    MERKLE_PATH = os.path.normpath(os.path.join(BASE_DIR, MERKLE_PATH))
 
 @app.errorhandler(Exception)
 def handle_exception(e):
