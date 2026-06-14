@@ -15,7 +15,7 @@ The system consists of:
 - Backend
     - Python 3.11+ (recommended)
     - Flask (+ CORS)
-    - MySQL (via `flask_mysqldb`)
+    - PostgreSQL (via `psycopg2`)
     - LevelDB (via `plyvel`)
     - Poseidon hash (`circomlibpy`)
     - Email via SMTP (Gmail example)
@@ -37,7 +37,7 @@ The system consists of:
 ```
 C:/Users/Jabir/PycharmProjects/NationalIDSystem
 ├─ routes.py                     # Flask app entry point (backend API)
-├─ MYSQL_connections.py          # (Present) MySQL-related helpers (if used)
+├─ POSTGRES_connections.py       # (Present) PostgreSQL-related helpers (if used)
 ├─ utilities/
 │  └─ send_email.py              # SMTP email sending (HTML templated)
 ├─ merkletreeids/
@@ -97,11 +97,11 @@ Frontend relies on the backend API (Flask) running locally (default: `http://loc
 System prerequisites:
 - Python 3.11+ (3.10+ may work)
 - Node.js 18+ (20+ recommended)
-- MySQL Server 8.x (or compatible)
+- PostgreSQL Server 14+ (or compatible)
 - LevelDB native library (required by `plyvel`)
 
 Python packages (no root `requirements.txt` yet):
-- `Flask`, `flask-cors`, `flask-mysqldb`
+- `Flask`, `flask-cors`, `psycopg2-binary`
 - `python-dotenv`
 - `nanoid`, `shortuuid`
 - `plyvel`
@@ -138,7 +138,7 @@ cd NationalIDSystem
 2) Create and fill `.env`
 ```
 cp .env .env.local  # optional; you may keep using .env
-# Edit values to match your local MySQL and desired MERKLE_PATH
+# Edit values to match your local PostgreSQL and desired MERKLE_PATH
 ```
 
 3) Backend — Python environment
@@ -148,7 +148,7 @@ python -m venv .venv
 # source .venv/bin/activate     # macOS/Linux
 
 pip install --upgrade pip
-pip install Flask flask-cors flask-mysqldb python-dotenv nanoid shortuuid plyvel circomlibpy
+pip install Flask flask-cors psycopg2-binary python-dotenv nanoid shortuuid plyvel circomlibpy
 
 # Ensure LevelDB is installed on your system so that plyvel can work.
 ```
@@ -167,7 +167,7 @@ npm install
 cd ..
 ```
 
-6) MySQL database
+6) PostgreSQL database
 - Create a database matching `DB_NAME` and required tables: `users`, `secrets`, `parties`.
 - Columns inferred from the code (you may adapt types to your needs):
     - `users(name, phone_number, email, birth_place, age, sex, ID, email_verification_code, email_code_expire, verified)`
@@ -244,7 +244,7 @@ Merkle helper (`merkletreeids/package.json`):
     - Install Node.js and ensure `node` is in your `PATH`.
     - Run `npm install` in `merkletreeids/`.
 
-- MySQL connection errors:
+- PostgreSQL connection errors:
     - Check `.env` DB settings; ensure the DB and tables exist.
     - Verify user credentials and host/port.
 
@@ -258,5 +258,5 @@ Merkle helper (`merkletreeids/package.json`):
 - [ ] Provide database schema migrations (SQL DDL) and seed data.
 - [ ] Create `requirements.txt` for the backend.
 - [ ] Add npm scripts for the helper (`merkletreeids`) if direct CLI usage becomes necessary.
-- [ ] Add Dockerfiles/docker-compose for easier setup of Flask, Next.js, and MySQL.
+- [ ] Add Dockerfiles/docker-compose for easier setup of Flask, Next.js, and PostgreSQL.
 - [ ] Implement automated tests (backend/frontend) and CI.

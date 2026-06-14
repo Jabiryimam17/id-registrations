@@ -9,7 +9,15 @@ FIELD_MODULUS = 2188824287183927522224640574525727508854836440041603434369820418
 
 class MerkleTreeDB:
     def __init__(self, db_path):
-        self.db = plyvel.DB(db_path, create_if_missing=True)
+        try:
+            self.db = plyvel.DB(db_path, create_if_missing=True)
+        except plyvel.IOError as error:
+            if b'already held by process' in error.args[0]:
+                raise RuntimeError(
+                    f"Merkle tree database is locked at '{db_path}'. "
+                    "Stop any other running instance using this path and try again."
+                ) from error
+            raise
         self.poseidon = PoseidonHash()
         self.db_path = db_path
         self._initialize_db()

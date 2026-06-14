@@ -13,8 +13,9 @@
       <excludeFolder url="file://$MODULE_DIR$/merkletreeids/leveldb/third_party/googletest/googlemock/gmock.dir" />
       <excludeFolder url="file://$MODULE_DIR$/merkletreeids/leveldb/third_party/googletest/googlemock/gmock_main.dir" />
       <excludeFolder url="file://$MODULE_DIR$/merkletreeids/leveldb/third_party/googletest/googletest/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/merkletreeids/leveldb" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (leetcode)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (id-registrations)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Voting" />
   </component>

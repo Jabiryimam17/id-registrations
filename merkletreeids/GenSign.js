@@ -1,6 +1,4 @@
-import build_eddsa from "./helper/circomlibjs/src/eddsa.js";
-import build_babyjub from "./helper/circomlibjs/src/babyjub.js";
-import build_poseidon from "./helper/circomlibjs/src/poseidon_opt.js";
+import { buildEddsa, buildBabyjub, buildPoseidonOpt } from "circomlibjs";
 import {
   li_buff_2_bits,
   li_int_2_bits,
@@ -8,6 +6,8 @@ import {
 } from "./helper/IntBuffConv.js";
 
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 
 const priv_key_hex = "02e37613483ec697ed75cda05f14afb0723208ef1c53840b1f19650481014654";
@@ -18,9 +18,9 @@ async function main() {
   const hid = BigInt(hid_str);
   const sid = BigInt(sid_str);
 
-  const baby_jub = await build_babyjub();
-  const eddsa = await build_eddsa();
-  const poseidon = await build_poseidon();
+  const baby_jub = await buildBabyjub();
+  const eddsa = await buildEddsa();
+  const poseidon = await buildPoseidonOpt();
 
   const pub_key = eddsa.prv2pub(priv_key);
   const msg_hash = poseidon([hid, sid]);
@@ -41,10 +41,10 @@ async function main() {
     commitment: msg_num.toString(),
   };
 
-  fs.writeFileSync(
-    "C:\\Users\\Jabir\\PycharmProjects\\NationalIDSystem\\merkletreeids\\sig_input.json",
-    JSON.stringify(output, null, 2)
-  );
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+  const outputPath = path.join(__dirname, "sig_input.json");
+  fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 }
 
 await main();

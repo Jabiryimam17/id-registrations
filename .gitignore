@@ -3,3 +3,4 @@
 /merkletreeids/.env
 /throwouts.py
 /merkletreeids/helper/circomlibjs/
+/frontend/node_modules/

@@ -1,6 +1,7 @@
 import random
 import subprocess
 import json
+from pathlib import Path
 from circomlibpy.poseidon import PoseidonHash
 from merkletreeids.MerkleTree import MerkleTreeDB
 
@@ -13,11 +14,12 @@ p = 2188824287183927522224640574525727508854836440041603434369820418657580849561
 
 
 
-class VoterRegister():
+class VoterRegister:
 
     def __init__(self, path):
         self.merkle_tree = MerkleTreeDB(path)
         self.poseidon_instance = PoseidonHash()
+        self.signature_file = Path(__file__).with_name("sig_input.json")
 
     def register_voter(self, official_id):
         sid = random.randint(0, 2**256)%p
@@ -28,25 +30,26 @@ class VoterRegister():
         self.merkle_tree.add_leaf(hid_bytes)
         self.generate_signature(hid, sid)
         inputs = {"sid": sid, "nullifier": nullifier}
-        with open("C:\\Users\\Jabir\\PycharmProjects\\NationalIDSystem\\merkletreeids\\sig_input.json", 'r+') as sig_file:
+        with open(self.signature_file, 'r+') as sig_file:
             signature = json.load(sig_file)
             inputs.update(signature)
             sig_file.seek(0)
             sig_file.truncate()
             return inputs
     
-    def generate_signature(self,hid:int, sid:int):
+    def generate_signature(self, hid: int, sid: int):
         node_path = "node"
-        js_script = "C:\\Users\\Jabir\\PycharmProjects\\NationalIDSystem\\merkletreeids\\GenSign.js"
+        js_script = Path(__file__).with_name("GenSign.js")
 
         result = subprocess.run(
-            [node_path, js_script, str(hid), str(sid)],
+            [node_path, str(js_script), str(hid), str(sid)],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True
         )
 
-        if result.returncode != 0: raise RuntimeError(f"JS Error: {result.stderr}")
+        if result.returncode != 0:
+            raise RuntimeError(f"JS Error: {result.stderr}")
 
 
     def generate_path(self, official_id):

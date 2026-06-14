@@ -1,4 +1,4 @@
-import build_babyjub from "./circomlibjs/src/babyjub.js";
+import { buildBabyjub } from "circomlibjs";
 import {Scalar} from "ffjavascript";
 
 export function li_int_2_bits(num,n) {
@@ -33,7 +33,7 @@ export function li_buff_2_bits(buff) {
 
 
 export async function validate_point(point) {
-    const baby_jub = await build_babyjub();
+    const baby_jub = await buildBabyjub();
 
     const F = baby_jub.F;
 
