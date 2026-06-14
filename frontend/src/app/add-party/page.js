@@ -1,3 +1,4 @@
+import { national_id_host } from "../../config";
 'use client';
 
 
@@ -32,7 +33,7 @@ export default function AddPartyPage() {
         set_message("");
 
         try {
-            const res = await fetch('http://localhost:5000/add_party',{
+            const res = await fetch(`${national_id_host}/add_party`,{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(form_data)

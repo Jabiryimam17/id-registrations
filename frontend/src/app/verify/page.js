@@ -1,3 +1,4 @@
+import { national_id_host } from "../../config";
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -15,7 +16,7 @@ async function encrypt_send(secrets, password, id) {
     data.official_id = id; // Include the official ID in the data to be sent
 
     try {
-        const res = await fetch('http://localhost:5000/save_secrets', {
+        const res = await fetch(`${national_id_host}/save_secrets`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
@@ -77,7 +78,7 @@ export default function VerifyPage() {
         event.preventDefault();
         set_status('idle');
         try {
-            const res = await fetch('http://localhost:5000/verify_email', {
+            const res = await fetch(`${national_id_host}/verify_email`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, code })
@@ -105,7 +106,7 @@ export default function VerifyPage() {
 
     const handle_resend = async () => {
         try {
-            const res = await fetch('http://localhost:5000/send_verification_code', {
+            const res = await fetch(`${national_id_host}/send_verification_code`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email })

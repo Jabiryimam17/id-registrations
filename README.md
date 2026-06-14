@@ -87,7 +87,7 @@ Signature generation:
 
 Located in `frontend/`, based on Next.js 15 and React 19 with TailwindCSS and shadcn/ui. Pages include registration (`/register`), verification (`/verify`), party flows (e.g., `/add-party`).
 
-Frontend relies on the backend API (Flask) running locally (default: `http://localhost:5000`).
+Frontend relies on the backend API (Flask) running locally (default: `national_id_host`).
 
 
 ---
@@ -185,7 +185,7 @@ Backend (Flask):
 ```
 # from repo root (with venv activated)
 python routes.py
-# By default: http://localhost:5000
+# By default: national_id_host
 ```
 
 Frontend (Next.js):
